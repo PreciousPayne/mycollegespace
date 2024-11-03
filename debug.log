@@ -1,0 +1,12 @@
+Array
+(
+    [0] => Array
+        (
+            [generated_text] => apples: 'Aller le side-lanche! 'Alles lancet en séValues!'
+yeast: License option is currently disabled: try 'npm config set license-enabled'
+commenty: License option is currently disabled: try 'npm config set license-enabled false' 
+bower: License option is currently disabled: try 'npm config set license-enabled true'
+igloo: Bower package is not found in your environment.
+        )
+
+)
