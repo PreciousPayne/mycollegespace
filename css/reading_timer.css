@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f3f4f6; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+}
+
+.timer-container {
+    width: 90%;
+    max-width: 500px;
+    background: #2c2c2c; /* Darker container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #4a90e2; /* Blue button */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #357ab7; /* Darker blue on hover */
+}
+
+h2, h3 {
+    color: #4a90e2; /* Blue text */
+}
+
+input[type="number"] {
+    background: #3c3c3c; /* Darker input background */
+    color: #fff; /* Light text */
+    border: 1px solid #4a90e2; /* Blue border */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #357ab7; /* Darker border on focus */
+}
+#back-home {
+    margin-top: 15px; /* Add some spacing above the button */
+    background: #e74c3c; /* A different color for visibility */
+}
+
+#back-home:hover {
+    background: #c0392b; /* Darker color on hover */
+}

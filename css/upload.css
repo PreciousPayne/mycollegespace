@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background: linear-gradient(120deg, #6a85b6, #bac8e0);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.upload-container {
+    background-color: #2e2e3a;
+    padding: 30px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 550px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.upload-container:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+form input[type="file"] {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #444;
+    border: 2px solid #5a5a6e;
+    border-radius: 8px;
+    color: #e0e0e0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+form input[type="file"]:hover {
+    background-color: #565672;
+    color: #ffffff;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e5bf00;
+    transform: scale(1.05);
+}
+
+.file-gallery {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.file-item {
+    background-color: #40404e;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.file-item:hover {
+    background-color: #505062;
+}
+
+.file-item a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.file-item a:hover {
+    color: #e6b800;
+}
+
+.file-item .file-date {
+    font-size: 0.9em;
+    color: #b0b0b8;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #d43f3f;
+}
+#back-home {
+    margin-top: 15px; /* Add some spacing above the button */
+    background: #e74c3c; /* A different color for visibility */
+    height: 50px;
+    width: 25%;
+    border-radius: 30px;
+    color:white;
+}
+
+#back-home:hover {
+    background: #c0392b; /* Darker color on hover */
+}

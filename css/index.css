@@ -1,0 +1,134 @@
+/* Import Custom Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lobster&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif; /* Main font */
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #FF6F61, #FFB75E, #41B3A3, #FF6F61); /* Bright colors for the gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    max-width: 90%;
+    padding: 40px 20px;
+    border-radius: 30px; /* Rounded corners for a modern look */
+    background: rgba(0, 0, 0, 0.4); /* Darker background for contrast */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
+    backdrop-filter: blur(10px); /* Blurring effect for depth */
+}
+
+/* Header Styling */
+header h1 {
+    font-family: 'Lobster', cursive; /* Decorative font for the header */
+    font-size: 4rem; /* Larger size for emphasis */
+    margin-bottom: 15px;
+    letter-spacing: 1.5px; /* Increased spacing */
+    text-transform: uppercase;
+    color: #FFEB3B; /* Bright yellow for visibility */
+    animation: textGlow 3s infinite alternate; /* Glow animation */
+}
+
+header p {
+    font-size: 1.5rem; /* Larger font size */
+    margin-bottom: 25px;
+    font-weight: 300;
+    color: #FFCCBC;
+}
+
+/* Hero Section Styling */
+.hero {
+    margin-top: 20px;
+}
+
+.welcome-message h2 {
+    font-size: 2.5rem; /* Increased size */
+    margin-bottom: 15px;
+    color: #FFEB3B;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Deeper shadow for more impact */
+}
+
+.welcome-message p {
+    font-size: 1.3rem; /* Adjusted size */
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #FFCCBC;
+}
+
+/* Call-to-Action Button Styling */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Button size */
+    background-color: #FFEB3B; /* Bright yellow background */
+    color: #FF6F61; /* Contrast color for text */
+    text-decoration: none;
+    border-radius: 30px; /* Rounded button edges */
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px; /* Slightly increased spacing */
+    transition: all 0.4s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative; /* Position for animated effect */
+}
+
+.cta-button:hover {
+    background-color: #FF6F61; /* Change background on hover */
+    color: #FFFFFF; /* Change text color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Keyframes for Text Glow Animation */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0px 0px 10px #FFEB3B, 0px 0px 20px #FFD740, 0px 0px 30px #FFAB40;
+    }
+    100% {
+        text-shadow: 0px 0px 15px #FFEB3B, 0px 0px 25px #FFD740, 0px 0px 35px #FFAB40;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header h1, header p, .welcome-message h2, .welcome-message p {
+    animation: fadeIn 1.5s ease forwards; /* Added fade-in effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; }
+    .welcome-message h2 { font-size: 2rem; }
+    .cta-button { font-size: 1rem; padding: 12px 25px; }
+}

@@ -1,0 +1,225 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(-45deg, #e0e7ff, #f0f4ff, #cfe2ff, #dfe7ff);
+    background-size: 300% 300%;
+    animation: gradientShift 15s ease infinite;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Calendar Container */
+.calendar-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.calendar-container:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #3a76dd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+/* Month Navigation */
+.month-nav a {
+    color: #3a76dd;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.month-nav a:hover {
+    color: #285bb5;
+}
+
+/* Calendar Table */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #e4e9f0;
+    width: 14.2%;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.calendar th {
+    background: #f1f5ff;
+    color: #3a76dd;
+    font-weight: 600;
+}
+
+.calendar td {
+    background: #eef2ff;
+    color: #333;
+}
+
+.calendar td:hover {
+    background: #d6e4ff;
+    cursor: pointer;
+}
+
+/* Date Text */
+.date {
+    font-weight: bold;
+    color: #3a76dd;
+    cursor: pointer;
+}
+
+/* Reminder Form and List */
+.reminder-form, .reminder-list {
+    margin-top: 20px;
+}
+
+.reminder-form label, .reminder-list h3 {
+    color: #3a76dd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Buttons */
+button {
+    background: #3a76dd;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+button:hover {
+    background: #285bb5;
+    box-shadow: 0 4px 12px rgba(58, 118, 221, 0.3);
+}
+
+/* Reminder List */
+.reminder-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reminder-list li {
+    background: #f7faff;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar Customization for Reminder List */
+.reminder-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reminder-list::-webkit-scrollbar-thumb {
+    background: #b0c4ff;
+    border-radius: 4px;
+}
+
+/* Moving Gradient Animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.today {
+    position: relative;
+    background: #ffd700; /* Gold background for today */
+}
+
+.today .date {
+    position: relative;
+    z-index: 1; /* Place text above the circle */
+}
+
+.today::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ff0000; /* Red border */
+    border-radius: 50%; /* Circular shape */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: 0; /* Behind the text */
+    box-sizing: border-box;
+}
+
+#back-home {
+    margin-top: 15px; /* Add some spacing above the button */
+    background: #e74c3c; /* A different color for visibility */
+}
+
+#back-home:hover {
+    background: #c0392b; /* Darker color on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .calendar-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .calendar th, .calendar td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .month-nav a {
+        font-size: 1em;
+        padding: 0 8px;
+    }
+
+    .reminder-form, .reminder-list h3 {
+        font-size: 1em;
+    }
+
+    .reminder-list li {
+        padding: 10px;
+    }
+}

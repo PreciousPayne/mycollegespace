@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Light gradient background */
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body overflow */
+}
+
+.entries-container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scroll */
+    max-height: 80vh; /* Limit height for scrolling */
+}
+
+h2 {
+    text-align: center;
+    color: #4a90e2; /* Header color */
+}
+
+.entry {
+    background: #f0f4ff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.entry:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.delete-btn {
+    background: #ff6b6b; /* Delete button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background: #ff3d3d; /* Darker shade on hover */
+}
+
+#back-home {
+    background: #4caf50; /* Back button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+#back-home:hover {
+    background: #45a049; /* Darker shade on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.close {
+    color: #4a90e2;
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+}
+
+.message {
+    color: #ff6b6b; /* Message color */
+    text-align: center;
+    margin-top: 10px;
+}

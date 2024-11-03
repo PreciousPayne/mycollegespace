@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(140deg, #2d2d2d, #1a1a1a);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.fitness-container {
+    width: 90%;
+    max-width: 700px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+.fitness-form label {
+    display: block;
+    color: #ddd;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.fitness-form input[type="text"], .fitness-form input[type="number"], .fitness-form input[type="date"], .fitness-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+.tips-section, .entries-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.entry {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.entry p {
+    margin: 5px 0;
+}
+
+.tips-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tips-section li {
+    color: #bbb;
+    margin: 5px 0;
+}
+#back-home {
+    margin-top: 15px; /* Add some spacing above the button */
+    background: #e74c3c; /* A different color for visibility */
+}
+
+#back-home:hover {
+    background: #c0392b; /* Darker color on hover */
+}

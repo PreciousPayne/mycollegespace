@@ -1,0 +1,130 @@
+/* css/flashcards.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1f26, #535a6a);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.flashcard-container {
+    background-color: #2b2e3c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #ffa726;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.add-card-form {
+    margin-bottom: 25px;
+}
+
+.add-card-form input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #3c3f4e;
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-card-form input:focus {
+    background-color: #4e5364;
+}
+
+.add-card-form button {
+    padding: 10px 18px;
+    background-color: #ffa726;
+    border: none;
+    border-radius: 8px;
+    color: #2b2e3c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-card-form button:hover {
+    background-color: #ff9800;
+}
+
+.flashcard-list {
+    margin-top: 25px;
+}
+
+.flashcard {
+    background-color: #3c3f4e;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 12px 0;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.flashcard p {
+    margin: 0 0 8px;
+    color: #ffa726;
+    font-weight: 600;
+}
+
+.flashcard .answer {
+    color: #f0f0f0;
+    font-style: italic;
+}
+
+.flashcard form {
+    display: inline;
+}
+
+.delete-button {
+    padding: 6px 12px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 6px;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #e04444;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+.study-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ffa726;
+    color: #2b2e3c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.study-link:hover {
+    background-color: #ff9800;
+}
